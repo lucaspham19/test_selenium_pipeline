@@ -25,8 +25,7 @@ def initialize_driver():
 
   return driver
 
-def get_html_content(URL: str):
-  driver = initialize_driver()
+def get_html_content(driver, URL: str):
   driver.get(URL)
   page = driver.page_source
   soup = BeautifulSoup(page)
