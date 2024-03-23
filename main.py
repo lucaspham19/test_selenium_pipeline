@@ -8,7 +8,7 @@ def get_html_content(URL: str):
 
   return soup
 
-def get_content(soup: BeautifulSoup, container: str):
+def get_content_from_container(soup: BeautifulSoup, container: str):
   return soup.find_all(container)
 
 
