@@ -49,4 +49,4 @@ jobs:
     - name: Trigger python smoke test
       run: |
         # python main.py
-        pytest
+        python -m pytest
